@@ -1,0 +1,6 @@
+requests
+streamlit
+sec-api
+nltk
+pandas
+matplotlib
