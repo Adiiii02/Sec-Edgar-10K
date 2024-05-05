@@ -6,8 +6,8 @@ This project provides a web-based tool for analyzing SEC EDGAR 10-K filings of d
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Auto-Analyze-Function](#autoanalyze)
-- [Tech-Stack-used](#techstackused)
+- [Auto-Analyze-Function](#auto-analyze-funhction)
+- [Tech-Stack-used](#tech-stack-used)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
@@ -25,7 +25,6 @@ Analyzing SEC 10-K filings is crucial for understanding a company's financial he
 - **Sentiment Analysis**: Performs sentiment analysis on the extracted sections using the FinBERT model to determine the sentiment (positive or negative) of the content.
 - **Summarization**: Summarizes the extracted sections using the BART-Large-CNN model to provide concise summaries of the content.
 - **Visualization**: Visualizes the sentiment analysis results using a pie chart to show the composition of positive and negative sentiments.
-
 - **Auto Analyze Function**: Automatically analyzes specific sections of the 10-K filing, including Risk Factors, Legal Proceedings, Management's Discussion and Analysis (MD&A), Financial Statements, and Supplementary Data.
 
 ## Auto-Analyze-Function
