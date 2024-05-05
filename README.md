@@ -6,8 +6,8 @@ This project provides a web-based tool for analyzing SEC EDGAR 10-K filings of d
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Auto Analyze Function](#autoanalyze)
-- [Tech Stack used](#techstackused)
+- [Auto-Analyze-Function](#autoanalyze)
+- [Tech-Stack-used](#techstackused)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
@@ -28,7 +28,7 @@ Analyzing SEC 10-K filings is crucial for understanding a company's financial he
 
 - **Auto Analyze Function**: Automatically analyzes specific sections of the 10-K filing, including Risk Factors, Legal Proceedings, Management's Discussion and Analysis (MD&A), Financial Statements, and Supplementary Data.
 
-## Auto Analyze Function
+## Auto-Analyze-Function
 
 The Auto Analyze function simplifies the analysis process by automatically extracting and analyzing specific sections of the 10-K filing. It focuses on the following key sections :
 
@@ -52,7 +52,7 @@ To use the Auto Analyze function:
 
 4. Explore the analysis results for each section provided by the tool.
 
-## Tech Stack Used
+## Tech-Stack-Used
 
 | Technology/Tool  | Purpose                                                                                             | 
 |------------------|-----------------------------------------------------------------------------------------------------|
