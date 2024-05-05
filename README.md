@@ -6,6 +6,7 @@ This project provides a web-based tool for analyzing SEC EDGAR 10-K filings of d
 
 - [Introduction](#introduction)
 - [Features](#features)
+- [Auto Analyze Function](#autoanalyze)
 - [Tech Stack used](#techstackused)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -62,9 +63,6 @@ To use the Auto Analyze function:
 | BART-Large-CNN   | Pre-trained language model used for text summarization tasks.                                       |
 | Matplotlib       | Python plotting library used to create visualizations, such as the pie chart for sentiment analysis.|
 
----
-
-You can integrate this table into your README file. Let me know if you need further assistance!
 
 ## Installation
 
