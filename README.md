@@ -25,6 +25,31 @@ Analyzing SEC 10-K filings is crucial for understanding a company's financial he
 - **Summarization**: Summarizes the extracted sections using the BART-Large-CNN model to provide concise summaries of the content.
 - **Visualization**: Visualizes the sentiment analysis results using a pie chart to show the composition of positive and negative sentiments.
 
+- **Auto Analyze Function**: Automatically analyzes specific sections of the 10-K filing, including Risk Factors, Legal Proceedings, Management's Discussion and Analysis (MD&A), Financial Statements, and Supplementary Data.
+
+## Auto Analyze Function
+
+The Auto Analyze function simplifies the analysis process by automatically extracting and analyzing specific sections of the 10-K filing. It focuses on the following key sections :
+
+1. **Risk Factors**: Provides insights into the risks that may affect the company's future performance and operations.
+
+2. **Legal Proceedings**: Summarizes any legal proceedings or litigation that the company is involved in.
+
+3. **Management's Discussion and Analysis (MD&A)**: Analyzes management's perspective on the company's financial performance, results of operations, and future plans.
+
+4. **Financial Statements**: Extracts and analyzes the financial statements included in the filing, such as the balance sheet, income statement, and cash flow statement.
+
+5. **Supplementary Data**: Provides additional information and data that may be relevant for analysis.
+
+To use the Auto Analyze function:
+
+1. Run the Streamlit app as described in the [Usage](#usage) section.
+
+2. Select a company from the dropdown menu and the year.
+
+3. Click on Auto Analyze Button . The tool will automatically extract the specified sections, perform sentiment analysis, summarize the content, and visualize the results.
+
+4. Explore the analysis results for each section provided by the tool.
 
 ## Tech Stack Used
 
