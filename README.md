@@ -2,6 +2,8 @@
 
 This project provides a web-based tool for analyzing SEC EDGAR 10-K filings of different companies. It allows users to select a company, fetch the relevant 10-K filing from the SEC API, extract various sections of the filing , auto analyse, perform sentiment analysis using the FinBERT model by ProsusAI, and summarize the content using the BART-Large-CNN model by Facebook. Additionally, it visualizes the sentiment analysis results using a pie chart.
 
+# Video Link : https://youtu.be/d6RpP1pmyqM?si=ByhGJYr3fE1MG8r6
+
 ## Table of Contents
 
 - [Introduction](#introduction)
