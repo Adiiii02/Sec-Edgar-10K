@@ -39,11 +39,23 @@ Year = st.number_input("Choose Year to Analyze",value=2023)
 #List of emotions to be used in the analysis
 classifier_sentiment = ['positive', 'neutral', 'negative']
 
+if st.button("Get Section Text"):
+
+    #get the url of the choosen year
+        url=get_url(ticker,Year)
+
+        #get the information/text of the choosen section
+        Result=get_any(url[0],section_number)
+
+        #Extract text from the list
+        text=Result[0]
+
+        st.write(text)
 
 #If User Selects to give his own Section to perform Analysis
-if st.button("Submit"):
+if st.button("Analyze"):
 
-    with st.spinner('Please Wait for a Min .....'):
+    with st.spinner('Please Wait for a Minute ..'):
 
         #get the url of the choosen year
         url=get_url(ticker,Year)
@@ -63,13 +75,14 @@ if st.button("Submit"):
         #Display them to the user
         display_sentiment_columns(section_name,positive,negative)
 
-        #Generate a Pie Chart
-        generate_pie_chart(positive,negative)
+        if (len(positive)!=0 or len(negative)!=0):
+            #Generate a Pie Chart
+            generate_pie_chart(positive,negative)
         
 
 if st.button("Auto Analyze"):
 
-    with st.spinner('Please Wait for a Min .....'):
+    with st.spinner('Please Wait for a Minute ..'):
     
         #get the url of the choosen year
         url=get_url(ticker,Year)
@@ -88,32 +101,36 @@ if st.button("Auto Analyze"):
         risk_positive,risk_negative = summarize_sentences(risk_sentences_by_sentiment)
         display_sentiment_columns("Risk Factors",risk_positive,risk_negative)
 
-        #Generate a Pie Chart
-        generate_pie_chart(risk_positive,risk_negative)
+        if(len(risk_positive)!=0 or len(risk_negative)!=0):
+            #Generate a Pie Chart
+            generate_pie_chart(risk_positive,risk_negative)
 
         #Display the Summarized Legal Proceedings Analysis to the user
         legal_sentences_by_sentiment = find_emotional_sentences(legal_text, classifier_sentiment, 0.85)
         legal_positive,legal_negative = summarize_sentences(legal_sentences_by_sentiment)
         display_sentiment_columns("Legal Proceedings",legal_positive,legal_negative)
 
-        #Generate a Pie Chart
-        generate_pie_chart(legal_positive,legal_negative)
+        if(len(legal_positive)!=0 or len(legal_negative)!=0):
+            #Generate a Pie Chart
+            generate_pie_chart(legal_positive,legal_negative)
 
         #Display the Summarized Managements Discussion Analysis to the user
         manag_sentences_by_sentiment = find_emotional_sentences(management_text, classifier_sentiment, 0.85)
         manag_positive,manag_negative = summarize_sentences(manag_sentences_by_sentiment)
         display_sentiment_columns("Managements Discussion and Analysis",manag_positive,manag_negative)
 
-        #Generate a Pie Chart
-        generate_pie_chart(manag_positive,manag_negative)
+        if(len(manag_positive)!=0 or len(manag_negative)!=0):
+            #Generate a Pie Chart
+            generate_pie_chart(manag_positive,manag_negative)
 
         #Display the Summarized Financial Statements and Supplementary Data Analysis to the user
         finan_sentences_by_sentiment = find_emotional_sentences(finan_text, classifier_sentiment, 0.85)
         finan_positive,finan_negative = summarize_sentences(finan_sentences_by_sentiment)
         display_sentiment_columns("Financial Statements and Supplementary Data",finan_positive,finan_negative)
 
-        #Generate a Pie Chart
-        generate_pie_chart(finan_positive,finan_negative)
+        if(len(finan_positive)!=0 or len(finan_negative)!=0):
+            #Generate a Pie Chart
+            generate_pie_chart(finan_positive,finan_negative)
 
     
 
